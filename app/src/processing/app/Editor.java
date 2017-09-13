@@ -1394,7 +1394,7 @@ public class Editor extends JFrame implements RunnerListener {
 
     menu.addSeparator();
 
-    JMenuItem increaseFontSizeItem = newJMenuItem(tr("Increase Font Size"), '+');
+    JMenuItem increaseFontSizeItem = newJMenuItem(tr("Increase Font Size"), KeyEvent.VK_PLUS);
     increaseFontSizeItem.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
           base.handleFontSizeChange(1);
@@ -1402,7 +1402,7 @@ public class Editor extends JFrame implements RunnerListener {
     });
     menu.add(increaseFontSizeItem);
 
-    JMenuItem decreaseFontSizeItem = newJMenuItem(tr("Decrease Font Size"), '-');
+    JMenuItem decreaseFontSizeItem = newJMenuItem(tr("Decrease Font Size"), KeyEvent.VK_MINUS);
     decreaseFontSizeItem.addActionListener(new ActionListener() {
         public void actionPerformed(ActionEvent e) {
           base.handleFontSizeChange(-1);
